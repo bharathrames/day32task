@@ -1,21 +1,29 @@
+import { Button, WrapItem } from '@chakra-ui/react';
 import React from 'react'
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import { useHistory } from 'react-router-dom';
+
 const Base = ({title, description, children}) => {
   const history = useHistory();
+  
   return (
+    
     <div className='main-component base-component'>
-      <button
+      <WrapItem>
+      <Button colorScheme='twitter'
       onClick={()=>history.push("/")}
-      >Dashboard</button>
-
-      <button
+      >Dashboard</Button>
+      </WrapItem>
+      <WrapItem>
+      <Button colorScheme='twitter'
       onClick={()=>history.push("/recepie")}
-      >recepie-List</button>
-
-      <button
+      >Foods-List</Button>
+      </WrapItem>
+      <WrapItem>
+      <Button colorScheme='twitter'
       onClick={()=>history.push("/add")}
-      >Add-recepie</button>
-
+      >Add-Foods</Button>
+      </WrapItem>
+      
          <header>
             <h1 className='heading'>{title}</h1>
          </header>

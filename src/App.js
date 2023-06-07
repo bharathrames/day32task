@@ -1,6 +1,6 @@
 import Recepie from './Components/Recepie';
 import './App.css';
-import { Redirect, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Addreceipe from './Components/Addrecepie';
 import Updaterecepie from './Components/Updaterecepie';
 import Nopage from './Components/Nopage';
@@ -27,7 +27,7 @@ function App() {
             <Addreceipe />
          </Route>
 
-         <Route path="/edit/:id">
+         <Route path="/edit/:id/">
             <Updaterecepie/>
          </Route>
           <Route path="**">

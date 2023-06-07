@@ -4,8 +4,8 @@ import Base from '../Base/Base'
 const DashBoard = () => {
   return (
   <Base
-  title={"Welocome to Recepie app"}
-  description={"This Food list website"}
+  title={"Welocome to Foods app"}
+  description={"This is Foods list website"}
   >
   </Base>
   )
